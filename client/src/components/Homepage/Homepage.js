@@ -10,6 +10,7 @@ function Homepage() {
                 <Hangman />
             </div>
             <Puzzle />
+            <Keyboard />
         </main>
     );
 }
