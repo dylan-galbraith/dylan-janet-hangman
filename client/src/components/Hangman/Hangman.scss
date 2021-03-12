@@ -11,20 +11,39 @@
     &__headBody {
         display: flex;
         flex-direction: column;
-        margin: 0 5px;
         justify-content: flex-start;
     }
     &__img {
         object-fit: contain;
+        align-self: flex-start;
+        margin: 0;
+        padding: 0;
     }
     &__body {
-        width: 12px;
-        margin: 0 auto;
+        margin: 0 auto;        
     }
     &__head {
-        margin: 0 3px;
-    }
+        margin: 0 auto;        
+    } 
     &__arms {
-
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+    &__noose {
+        margin-top: 0.4px;
+    }
+    &__rightarm {
+        margin-bottom: 42px;
+    }
+    &__leftarm {
+        @extend .hangman__rightarm;
+    }
+    &__limbs {
+        display: flex;
+        flex-direction: column;
+    }
+    &__rightleg { 
+        align-self: flex-end;
     }
 }

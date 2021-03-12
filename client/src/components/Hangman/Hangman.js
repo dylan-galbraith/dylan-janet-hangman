@@ -19,16 +19,24 @@ function Hangman(props) {
                     <div className="hangman__headBody">
                         <img src={head} className="hangman__head hangman__img" alt="head"/>
                         <div className="hangman__arms">
-                        <img src={body} className="hangman__body hangman__img" alt="body"/>
+                            <div className="hangman__limbs">
                         <img src={rightArm} className="hangman__rightarm" alt="rightArm"/>
-            <img src={leftArm} className="hangman__leftarm" alt="leftArm"/>
+                        <img src={rightLeg} className="hangman__rightleg hangman__img" alt="rightLeg"/>     
+                        </div>
+                        <img src={body} className="hangman__body hangman__img" alt="body"/>   
+                        <div className="hangman__limbs">               
+                        <img src={leftArm} className="hangman__leftarm" alt="leftArm"/>
+                        <img src={leftLeg} className="hangman__leftleg hangman__img" alt="leftLeg"/> 
+                    </div>
+                   
+                    
                     </div>
                  </div>
+          
                 </div>
                 </div>
-            {/* 
-            <img src={rightLeg} className="hangman__rightleg" alt="rightLeg"/>             
-            <img src={leftLeg} className="hangman__leftleg" alt="leftLeg"/>             */}
+               
+            
         </section>
     );
 }
