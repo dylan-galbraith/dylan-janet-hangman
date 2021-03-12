@@ -1,0 +1,30 @@
+.hangman {
+    &__box {
+        display: flex;
+        align-items: flex-start;
+    }
+    &__column {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    &__headBody {
+        display: flex;
+        flex-direction: column;
+        margin: 0 5px;
+        justify-content: flex-start;
+    }
+    &__img {
+        object-fit: contain;
+    }
+    &__body {
+        width: 12px;
+        margin: 0 auto;
+    }
+    &__head {
+        margin: 0 3px;
+    }
+    &__arms {
+
+    }
+}
