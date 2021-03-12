@@ -1,6 +1,5 @@
 import axios from "axios";
 import { Component } from "react";
-import "./Puzzle.scss"
 
 class Puzzle extends Component {
 
@@ -23,15 +22,15 @@ class Puzzle extends Component {
     console.log(this.state);
     if(!this.state.word) {
       return (
-        <div>
-          <button onClick={this.generateWord}>Random Word</button>
+        <div className="puzzle">
+          <button onClick={this.generateWord} className="puzzle__button">Start a New Game</button>
         </div>
       )
     } 
 
     return (
       <div className="puzzle">
-        <button onClick={this.generateWord}>Random Word</button>
+        <button onClick={this.generateWord} className="puzzle__button">Start a New Game</button>
         <ul className="puzzle__word">
           {this.state.word.map(letter => {
             return <li className="puzzle__letter">{letter}</li>

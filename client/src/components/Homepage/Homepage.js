@@ -1,16 +1,17 @@
-import React, { Component } from 'react';
 import Hangman from "../Hangman/Hangman";
-import Puzzle from "../Puzzle/Puzzle"
+import Puzzle from "../Puzzle";
+import Header from "../Header";
 
-class Homepage extends Component {
-    render() {
-        return (
-            <div>
+function Homepage() {
+    return (
+        <main className="main">
+            <div className="main__top">
+                <Header />
                 <Hangman />
-                <Puzzle />
             </div>
-        );
-    }
+            <Puzzle />
+        </main>
+    );
 }
 
 export default Homepage;
