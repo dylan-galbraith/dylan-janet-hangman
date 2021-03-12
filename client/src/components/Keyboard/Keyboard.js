@@ -5,7 +5,7 @@ function Keyboard(props) {
     return (
         <div className="keyboard">
             {alphabetArr.map((letter)=> {
-                return <button type="submit" className="letter__box" key={letter}>{letter}</button>
+                return <button type="submit" onCLick={props.clickHandler} giclassName="letter__box" key={letter}>{letter}</button>
             })}
             
         </div>
